@@ -1,0 +1,92 @@
+<div class="page" data-name = "taches">
+  <!-- Barre de navigation (haut) -->
+  <div class="navbar">
+    <div class="navbar-bg"></div>
+    <div class="navbar-inner">
+      <div class="title">Ma ToDo</div>
+    </div>
+  </div>
+  <!-- Barre d'onglets -->
+  <div class="toolbar tabbar toolbar-bottom">
+    <div class="toolbar-inner">
+      <a href="/" class="tab-link tabbar-label custom-tab">
+        <span class="">Accueil</span>
+      </a>
+      <a href="/taches/" class="tab-link tabbar-label tab-link-active custom-tab">
+        <span>Taches</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="page-content">
+   <!-- 
+             ======================================================
+                SÉANCE 2 : ajouter un champ + un bouton, puis
+                générer la liste à partir d'un tableau JS
+                (voir js/app.js). Ajouter / supprimer une tâche. 
+            ======================================================
+            -->
+
+    <div class="list inset">
+      <ul>
+        <li class="item-content item-input">
+          <div class="item-inner">
+            <div class="item-input-wrap">
+              <input
+                type="text"
+                id="champ-tache"
+                placeholder="Nouvelle tâche…"
+              />
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="block">
+      <a href="#" class="button button-fill" id="btn-ajouter">Ajouter</a>
+    </div>
+
+    <div class="block">
+            <div class="segmented">
+
+                <button class="button filtre-btn button-active"
+                 data-filtre = "toutes">
+                 Toutes
+                </button>
+
+                <button class="button filtre-btn"
+                 data-filtre = "afaire">
+                 A faire
+                </button>
+
+                <button class="button filtre-btn"
+                 data-filtre = "faites">
+                 Faite
+                </button>
+            </div>
+        </div>
+
+    <!-- 
+            ======================================================
+                SÉANCE 1 : afficher ici une liste de tâches EN DUR
+                (composant "list" avec des cases à cocher).
+            ======================================================
+            -->
+
+    <div class="list">
+      <ul class="liste-taches">
+        <!-- Affiche dynamiquement les taches du tableau dans app -->
+      </ul>
+    </div>
+
+    <!--  
+                ======================================================
+                    SÉANCE 3 : cocher/décocher, compteur, filtres,
+                    puis sauvegarde avec localStorage.
+                ====================================================== 
+                -->
+    <div class="block">
+      <p class="text-color-white">À compléter pendant les séances.</p>
+    </div>
+  </div>
+</div>
